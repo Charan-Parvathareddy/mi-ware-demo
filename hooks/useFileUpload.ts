@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { parseCSV } from '@/lib/csvParser';
-
 export function useFileUpload() {
   const [file, setFile] = useState<File | null>(null);
   const [csvData, setCsvData] = useState<string[][]>([]);
